@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone_ui/page/PageVideoHalamanSaya.dart';
 import 'package:tiktok_clone_ui/page/page_akun_saya.dart';
 
 class PageHalamanUtama extends StatefulWidget {
@@ -10,7 +11,7 @@ class PageHalamanUtama extends StatefulWidget {
 class _PageHalamanUtamaState extends State<PageHalamanUtama> {
   int currentIndex = 0;
   List<Widget> listPage = [
-    Text("Hello"),
+    PageVideoHalamanSaya(),
     Text("Hello"),
     Text("Hello"),
     Text("Hello"),
@@ -22,15 +23,17 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
     return Scaffold(
       body: listPage[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.white,
         showSelectedLabels: true,
         showUnselectedLabels: true,
         items: [
           BottomNavigationBarItem(
               icon: ImageIcon(
                 AssetImage("assets/ic_nav_home.png"),
-                color: Colors.grey,
+                color: Colors.white,
               ),
               label: "Home"),
           BottomNavigationBarItem(
@@ -40,7 +43,13 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
               ),
               label: "Discover"),
           BottomNavigationBarItem(
-              icon: Image.asset("assets/ic_nav_tambah.png"), label: ""),
+              icon: Padding(
+                padding: const EdgeInsets.all(0.0),
+                child: Image.asset(
+                  "assets/ic_nav_tambah.png",
+                ),
+              ),
+              label: ""),
           BottomNavigationBarItem(
               icon: ImageIcon(
                 AssetImage("assets/ic_nav_inbox.png"),

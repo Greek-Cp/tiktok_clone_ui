@@ -141,7 +141,7 @@ class _PageAkunSayaState extends State<PageAkunSaya>
                     height: 10.h,
                   ),
                   Text(
-                    """ 👋 Hi, I’m Lee - 10k 🎯\n•👨🏻‍💻 Android Engineer\n•🏂 Konten Kreator Coding
+                    """ 👋 Hi, I’m Yanuar - 100k 🎯\n•👨🏻‍💻 Android Engineer\n•🏂 Content Creator Programmer
                     """,
                     style: TextStyle(fontSize: 15.sp),
                   ),
@@ -239,9 +239,11 @@ class _PageAkunSayaState extends State<PageAkunSaya>
             style: ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll(Colors.red)),
             child: Padding(
-              padding: EdgeInsets.only(left: 40.w, right: 40.w),
+              padding: EdgeInsets.only(
+                  left: 40.w, right: 40.w, top: 10.h, bottom: 10.h),
               child: Text(
                 "Follow",
+                style: TextStyle(fontSize: 15.sp),
               ),
             )),
         Card(
@@ -258,7 +260,7 @@ class _PageAkunSayaState extends State<PageAkunSaya>
         Card(
           elevation: 1,
           child: Padding(
-            padding: EdgeInsets.all(12.h),
+            padding: EdgeInsets.all(11.h),
             child: Image.asset(
               "assets/ic_cek_semua.png",
               width: 10.w,

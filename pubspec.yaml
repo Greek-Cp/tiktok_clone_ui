@@ -43,5 +43,11 @@ flutter:
     - assets/ic_nav_tambah.png
     - assets/ic_nav_inbox.png
     - assets/ic_total_play.png
+    - assets/image_video.png
+    - assets/ic_music_vids.png
+    - assets/ic_heart_vids.png
+    - assets/ic_comment_vids.png
+    - assets/ic_share_vids.png
+    - assets/ic_disc_vids.png
 
 
